@@ -1,0 +1,5 @@
+﻿  list.cpp
+c:\users\agnieszka\source\repos\projects\simplelistmodule\moduł listy prostej\list.cpp(43): warning C4551: wywołaniu funkcji brakuje listy argumentów
+c:\users\agnieszka\source\repos\projects\simplelistmodule\moduł listy prostej\list.cpp(154): warning C4715: "Find”: niewszystkie ścieżki kodu zwracają wartość
+  moduł listy prostej.vcxproj -> C:\Users\Agnieszka\source\repos\Projects\SimpleListModule\Debug\moduł listy prostej.exe
+  moduł listy prostej.vcxproj -> C:\Users\Agnieszka\source\repos\Projects\SimpleListModule\Debug\moduł listy prostej.pdb (Partial PDB)
