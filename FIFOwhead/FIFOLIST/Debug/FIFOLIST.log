@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  FIFOLIST.cpp
+c:\users\agnieszka\source\repos\projects\fifowhead\fifolist\fifolist.cpp(21): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „QItem”
+c:\users\agnieszka\source\repos\projects\fifowhead\fifolist\fifolist.cpp(23): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „QItem”
+c:\users\agnieszka\source\repos\projects\fifowhead\fifolist\fifolist.cpp(33): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „QItem”
+c:\users\agnieszka\source\repos\projects\fifowhead\fifolist\fifolist.cpp(35): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „QItem”
+  fifo.cpp
+  Generowanie kodu...
+  FIFOLIST.vcxproj -> C:\Users\Agnieszka\source\repos\Projects\FIFOwhead\Debug\FIFOLIST.exe
+  FIFOLIST.vcxproj -> C:\Users\Agnieszka\source\repos\Projects\FIFOwhead\Debug\FIFOLIST.pdb (Partial PDB)

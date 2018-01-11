@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  headFIFO.cpp
+  FIFOhead.cpp
+c:\users\agnieszka\source\repos\projects\fifowthohead\fifohead\fifohead.cpp(21): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „QItem”
+c:\users\agnieszka\source\repos\projects\fifowthohead\fifohead\fifohead.cpp(23): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „QItem”
+c:\users\agnieszka\source\repos\projects\fifowthohead\fifohead\fifohead.cpp(33): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „QItem”
+c:\users\agnieszka\source\repos\projects\fifowthohead\fifohead\fifohead.cpp(35): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „QItem”
+  Generowanie kodu...
+  FIFOhead.vcxproj -> C:\Users\Agnieszka\source\repos\Projects\FIFOwthohead\Debug\FIFOhead.exe
+  FIFOhead.vcxproj -> C:\Users\Agnieszka\source\repos\Projects\FIFOwthohead\Debug\FIFOhead.pdb (Partial PDB)
