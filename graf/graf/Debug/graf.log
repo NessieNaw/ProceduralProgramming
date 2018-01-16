@@ -1,0 +1,6 @@
+﻿  graf.cpp
+c:\users\agnieszka\source\repos\graf\graf\graf.cpp(131): warning C4477: „fprintf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „double”
+c:\users\agnieszka\source\repos\graf\graf\graf.cpp(146): warning C4715: "MemInitList”: niewszystkie ścieżki kodu zwracają wartość
+c:\users\agnieszka\source\repos\graf\graf\graf.cpp(156): warning C4715: "MemInit”: niewszystkie ścieżki kodu zwracają wartość
+  graf.vcxproj -> C:\Users\Agnieszka\source\repos\graf\Debug\graf.exe
+  graf.vcxproj -> C:\Users\Agnieszka\source\repos\graf\Debug\graf.pdb (Partial PDB)
