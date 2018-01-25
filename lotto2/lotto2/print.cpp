@@ -28,7 +28,7 @@ void PrintResults( FILE* fout, int* pNums5, int* pNums2, LottoPlayer** pDraws, i
 	PrintBets( fout, pPlayer );
 	}
 
-	fprintf( fout, "\n====================================\n||      S T A T I S T I C S       ||\n====================================\n\n\n" );
+	fprintf( fout, "\n====================================\n      S T A T I S T I C S       \n=====================================\n\n\n" );
 
 	int* p5 = pNums5;
 	for( int i = 0; i < RESULT5; i++, p5++ )

@@ -11,7 +11,8 @@ int  SetDate( LottoPlayer* p, int d, int m, int y );
 int  ReadData( LottoPlayer*** pAllDraws, const char* sfileName )
 {
 	FILE* fin = NULL;			 
-	if ( ( fin = fopen( sfileName, "r" ) ) == NULL )
+    fopen_s( &fin, sfileName, "r" );
+	//if ( ( fin = fopen_s( sfileName, "r" ) ) == NULL )
 	{
 		printf( "ERROR: file %s not exists", sfileName );
 		return 0;
@@ -42,7 +43,7 @@ int  ReadData( LottoPlayer*** pAllDraws, const char* sfileName )
 			//memset( n, 0, sizeof( LottoPlayer ) );
 			char SexType;	
 			int d, m, y;	
-			fscanf( fin, "%s %s %c %8c%3c %2c%2c%10c%14c %d/%d/%d %10c",	
+			fscanf_s( fin, "%s %s %c %8c%3c %2c%2c%10c%14c %d/%d/%d %10c",	
 															pPlayer->Surname, 
 															pPlayer->Name, 
 															&SexType,
@@ -74,7 +75,7 @@ printf( " pesel %d", pPlayer->Pesel );
 				break;
 			}
 
-			fscanf( fin, "\n" );
+			fscanf_s( fin, "\n" );
 
 #ifdef _DEBUG_PRINT_
 			printf( "\n %s %s \n", &pPlayer->Name, &pPlayer->Surname );
@@ -105,9 +106,9 @@ printf( " pesel %d", pPlayer->Pesel );
 			}
 
 			for(  int k = 0; k < SIZE5; k++ )
-					fscanf( fin, "%d",	&p5[k] );
+					fscanf_s( fin, "%d",	&p5[k] );
 			//for( int i = 0; i < SIZE2 ; i++ )
-			fscanf( fin, "%d %d", p2, p2+1  );
+			fscanf_s( fin, "%d %d", p2, p2+1  );
 			
 #ifdef _DEBUG_PRINT_
 	printf( "\n " );
@@ -120,7 +121,7 @@ printf( " pesel %d", pPlayer->Pesel );
 #endif // _DEBUG_PRINT_
 
 			DrawRead++;
-			fscanf( fin, "\n" );
+			fscanf_s( fin, "\n" );
 		}
 		pPlayer->CurrDraws = DrawRead;
 		PlayersNo++;
@@ -171,7 +172,7 @@ void FreeMem( LottoPlayer** pTab, int nDrawsNo )
 	{
 		LottoPlayer* p1 = pTab[i];
 		pBets* p2 = p1->pTabDraw;
-		for ( int j = 0; j<p1->CurrDraws ; j++, p2++ )
+		for ( int j = 0; j < p1->CurrDraws ; j++, p2++ )
 		{
 			free( p2->Bet2 );
 			free( p2->Bet5 );
@@ -179,7 +180,7 @@ void FreeMem( LottoPlayer** pTab, int nDrawsNo )
 		free( p1->DateInfo );
 		free( p1 );
 	}
-	//	free( &pTab )
+	//	free( &pTab )2
 	free( pTab );
 }
 //-----------------------------------------

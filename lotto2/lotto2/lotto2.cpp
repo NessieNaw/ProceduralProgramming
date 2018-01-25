@@ -35,7 +35,7 @@ int main( int argc, char* argv[] )
 	Sort(  pPlayersTab, CurrPlNum  );
 
 	
-	FILE* Fout = fopen( argv[2], "w" );
+	FILE* Fout; fopen_s( &Fout, argv[2], "w" );
 	if(  !Fout  )
 	{
 		printf( "\nCan not open \"%s\" file to write. Error.\n", argv[2] );
@@ -125,8 +125,8 @@ int strCompare(  char* s1, char* s2 )
 	memcpy( copyS1, s1, strlen( s1 )+1 );
 	memcpy( copyS2, s2, strlen( s2 )+1 );
 
-	_strlwr( copyS1 ); //dla ma³ych liter
-	_strlwr( copyS2 );
+	//_strlwr_s( copyS1 ); //dla ma³ych liter
+	//_strlwr( copyS2 );
 
 	int res = strcmp( copyS1, copyS2 ); 
 

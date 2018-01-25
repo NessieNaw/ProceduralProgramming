@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <cstdlib>
 #include <time.h>
+#include "stdafx.h"
 
 
 #define SIZE 20	
